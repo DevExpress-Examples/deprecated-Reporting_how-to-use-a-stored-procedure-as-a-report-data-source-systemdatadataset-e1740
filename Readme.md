@@ -13,7 +13,7 @@
 # How to use a stored procedure as a report data source (System.Data.DataSet)
 
 
-<p><strong>This approach is actual prior to version 14.1. Starting with version 14.1, use the approach illustrated in the following example: <a href="https://github.com/DevExpress-Examples/Reporting_how-to-bind-a-report-to-a-stored-procedure-provided-by-the-sql-data-source-in-a-t227366">How How to bind a report to a stored procedure provided by the SQL Data Source in a WinForms application</a>.</strong>
+<p><strong>This approach is actual prior to version 14.1. Starting with version 14.1, use the approach illustrated in the following example: <a href="https://github.com/DevExpress-Examples/Reporting_how-to-bind-a-report-to-a-stored-procedure-provided-by-the-sql-data-source-in-a-t227366">How to bind a report to a stored procedure provided by the SQL Data Source in a WinForms application</a>.</strong>
 </p>
 
 
