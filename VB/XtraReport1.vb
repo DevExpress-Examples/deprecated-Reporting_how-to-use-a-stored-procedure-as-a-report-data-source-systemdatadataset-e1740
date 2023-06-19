@@ -2,7 +2,6 @@ Imports System
 Imports System.Drawing
 Imports System.ComponentModel
 Imports DevExpress.XtraReports.UI
-Imports RepStoredProc.NorthwindDataSetTableAdapters
 
 Namespace RepStoredProc
 
@@ -13,7 +12,7 @@ Namespace RepStoredProc
             InitializeComponent()
         End Sub
 
-        Private Sub XtraReport1_BeforePrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs)
+        Private Sub XtraReport1_BeforePrint(ByVal sender As Object, ByVal e As CancelEventArgs)
             custOrdersDetailTableAdapter.Fill(TryCast(DataSource, NorthwindDataSet).CustOrdersDetail, Convert.ToInt32(Parameters(CStr("OrderId")).Value))
         End Sub
     End Class

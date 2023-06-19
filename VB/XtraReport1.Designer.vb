@@ -31,8 +31,8 @@ Namespace RepStoredProc
             Me.xrLabel1 = New DevExpress.XtraReports.UI.XRLabel()
             Me.PageHeader = New DevExpress.XtraReports.UI.PageHeaderBand()
             Me.PageFooter = New DevExpress.XtraReports.UI.PageFooterBand()
-            Me.northwindDataSet1 = New RepStoredProc.NorthwindDataSet()
-            Me.custOrdersDetailTableAdapter = New RepStoredProc.NorthwindDataSetTableAdapters.CustOrdersDetailTableAdapter()
+            Me.northwindDataSet1 = New NorthwindDataSet()
+            Me.custOrdersDetailTableAdapter = New NorthwindDataSetTableAdapters.CustOrdersDetailTableAdapter()
             Me.OrderId = New DevExpress.XtraReports.Parameters.Parameter()
             Me.topMarginBand1 = New DevExpress.XtraReports.UI.TopMarginBand()
             Me.bottomMarginBand1 = New DevExpress.XtraReports.UI.BottomMarginBand()
@@ -117,7 +117,7 @@ Namespace RepStoredProc
             Me.DataSource = Me.northwindDataSet1
             Me.Parameters.AddRange(New DevExpress.XtraReports.Parameters.Parameter() {Me.OrderId})
             Me.Version = "10.2"
-            AddHandler Me.BeforePrint, New System.Drawing.Printing.PrintEventHandler(AddressOf Me.XtraReport1_BeforePrint)
+            AddHandler Me.BeforePrint, New DevExpress.XtraReports.UI.BeforePrintEventHandler(AddressOf Me.XtraReport1_BeforePrint)
             CType((Me.northwindDataSet1), System.ComponentModel.ISupportInitialize).EndInit()
             CType((Me), System.ComponentModel.ISupportInitialize).EndInit()
         End Sub
@@ -129,9 +129,9 @@ Namespace RepStoredProc
 
         Private PageFooter As DevExpress.XtraReports.UI.PageFooterBand
 
-        Private northwindDataSet1 As RepStoredProc.NorthwindDataSet
+        Private northwindDataSet1 As NorthwindDataSet
 
-        Private custOrdersDetailTableAdapter As RepStoredProc.NorthwindDataSetTableAdapters.CustOrdersDetailTableAdapter
+        Private custOrdersDetailTableAdapter As NorthwindDataSetTableAdapters.CustOrdersDetailTableAdapter
 
         Private xrLabel1 As DevExpress.XtraReports.UI.XRLabel
 

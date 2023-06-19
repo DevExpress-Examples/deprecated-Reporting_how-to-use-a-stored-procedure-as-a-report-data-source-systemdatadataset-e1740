@@ -11,7 +11,7 @@ namespace RepStoredProc {
             InitializeComponent();
         }
 
-        private void XtraReport1_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {
+        private void XtraReport1_BeforePrint(object sender, CancelEventArgs e) {
             custOrdersDetailTableAdapter.Fill((this.DataSource as NorthwindDataSet).CustOrdersDetail, Convert.ToInt32(Parameters["OrderId"].Value));
         }
     }
